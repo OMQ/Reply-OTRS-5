@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Changes">
+    <ConfigItem Name="Ticket::EventModulePost###OmqArticleCreatedEvent" Required="0" Valid="1">
+        <Description Translatable="1">Loads auto response answers after article has been created.</Description>
+        <Group>EventModulePostTemplate</Group>
+        <SubGroup>EventModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::OmqArticleCreatedEvent</Item>
+                <Item Key="Event">ArticleCreate</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

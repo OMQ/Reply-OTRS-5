@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Changes">
+    <ConfigItem Name="Ticket::EventModulePost###OmqArticleAutoResponseEvent" Required="0" Valid="1">
+        <Description Translatable="1">Updates tickets after auto response has been sent.</Description>
+        <Group>EventModulePostTemplate</Group>
+        <SubGroup>EventModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::OmqArticleAutoResponseEvent</Item>
+                <Item Key="Event">ArticleAutoResponse</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

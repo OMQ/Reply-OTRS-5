@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="OMQ::AutoResponder::Settings::URL" Required="1" Valid="1">
+        <Description Translatable="1">URL of the OMQ server.</Description>
+        <Group>OMQ</Group>
+        <SubGroup>Auto responder</SubGroup>
+        <Setting>
+            <String></String>
+        </Setting>
+    </ConfigItem>
+
+    <ConfigItem Name="OMQ::AutoResponder::Settings::Apikey" Required="1" Valid="1">
+        <Description Translatable="1">Auto Responder Apikey.</Description>
+        <Group>OMQ</Group>
+        <SubGroup>Auto responder</SubGroup>
+        <Setting>
+            <String></String>
+        </Setting>
+    </ConfigItem>
+
+    <ConfigItem Name="OMQ::AutoResponder::Settings::Apikeys" Required="1" Valid="1">
+        <Description Translatable="1">Auto Responder Apikeys.</Description>
+        <Group>OMQ</Group>
+        <SubGroup>Auto responder</SubGroup>
+        <Setting>
+            <Hash>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+
+    <ConfigItem Name="OMQ::AutoResponder::Settings::EnableDebugLog" Required="1" Valid="1">
+        <Description Translatable="1">Enable debug information in OTRS log.</Description>
+        <Group>OMQ</Group>
+        <SubGroup>Auto responder</SubGroup>
+        <Setting>
+            <Option SelectedID="0">
+                <Item Key="1">Yes</Item>
+                <Item Key="0">No</Item>
+            </Option>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

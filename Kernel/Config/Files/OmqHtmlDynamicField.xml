@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="1.0" init="Application">
+  <ConfigItem Name="DynamicFields::Driver###HTML" Required="0" Valid="1">
+    <Description Translatable="1">DynamicField backend registration.</Description>
+    <Group>DynamicFields</Group>
+    <SubGroup>DynamicFields::Driver::Registration</SubGroup>
+    <Setting>
+      <Hash>
+        <Item Key="DisplayName" Translatable="1">HTML</Item>
+        <Item Key="Module">Kernel::System::DynamicField::Driver::HTML</Item>
+        <Item Key="ConfigDialog">AdminDynamicFieldText</Item>
+      </Hash>
+    </Setting>
+  </ConfigItem>
+</otrs_config>
